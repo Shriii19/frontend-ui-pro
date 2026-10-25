@@ -33,6 +33,8 @@
 - [Contributing](#contributing)
 - [License](#license)
 
+---
+
 ## What is Frontend UI Pro?
 
 Frontend UI Pro is a Markdown-based skill for AI coding agents. It provides a repeatable workflow for inspecting a frontend project, exploring design directions, using design references, mapping color palettes, and planning or implementing UI improvements.
@@ -41,7 +43,11 @@ It is designed to work with an existing project instead of assuming every projec
 
 > **Important:** Frontend UI Pro is a set of instructions and reference documents. It is not a standalone visual editor or website preview application.
 
-## Features
+---
+
+<a id="features"></a>
+
+## ✨ Features
 
 - **Existing UI review** — inspect available project files and identify layout, typography, spacing, component, accessibility, and responsive-design opportunities.
 - **Design suggestions** — recommend a short list of suitable UI directions based on the project and its audience.
@@ -51,6 +57,8 @@ It is designed to work with an existing project instead of assuming every projec
 - **Implementation planning** — propose focused changes while preserving existing functionality.
 - **Responsive and accessibility guidance** — consider mobile layouts, keyboard access, focus states, contrast, and meaningful component states.
 - **Reference files** — keep detailed guidance in separate Markdown files so the main skill stays readable.
+
+---
 
 ## Repository files
 
@@ -65,7 +73,11 @@ It is designed to work with an existing project instead of assuming every projec
 
 Keep the reference files alongside `SKILL.md` so the agent can follow its relative references.
 
-## Installation
+---
+
+<a id="installation"></a>
+
+## 📦 Installation
 
 ### Option A — Install from this repository
 
@@ -93,6 +105,8 @@ Replace `YOUR-USERNAME` with the GitHub account or organization that owns the re
 5. Reload the agent if necessary and run a test prompt.
 
 **There is no single universal skills folder for every AI tool.** Some agents use different folder paths, metadata, or installation mechanisms. Use the folder documented by your chosen agent rather than assuming a particular drive or path.
+
+---
 
 ## How to use it
 
@@ -164,6 +178,8 @@ unnecessary dependencies. Run available checks and summarize changed files.
 
 Implementation requires the agent to have access to your project and permission to edit files.
 
+---
+
 ## Slash-command examples
 
 The following are suggested command patterns for agents that support custom slash commands or skill invocation:
@@ -181,6 +197,8 @@ The following are suggested command patterns for agents that support custom slas
 
 **Slash-command note:** Writing these patterns in Markdown does not automatically register them. Your AI coding agent must support and register the relevant command or skill invocation. If it does not, use the same text as a normal prompt.
 
+---
+
 ## Import a design specification
 
 Use `design.md` as a shared design-system reference. It includes sections for:
@@ -196,6 +214,8 @@ Use `design.md` as a shared design-system reference. It includes sections for:
 - Implementation notes
 
 You can keep your own specification in the repository, provide its contents directly, or ask the agent to retrieve an accessible URL. Always verify that the agent successfully read the intended file.
+
+---
 
 ## Import or create a color palette
 
@@ -215,7 +235,11 @@ Common semantic roles include:
 
 Provide HEX values, a palette file, or a URL the agent can access. Ask for light and dark variants if needed. Color contrast should be checked with a reliable tool when available; untested contrast should not be described as verified.
 
-## Recommended workflow
+---
+
+<a id="recommended-workflow"></a>
+
+## 🧭 Recommended workflow
 
 1. **Inspect** — understand the existing code and UI.
 2. **Recommend** — compare a small set of relevant design directions.
@@ -228,6 +252,8 @@ Provide HEX values, a palette file, or a URL the agent can access. Ask for light
 
 This workflow helps avoid unrequested redesigns and reduces the risk of breaking existing features.
 
+---
+
 ## Compatibility and limitations
 
 - The skill depends on the capabilities and configuration of the AI coding agent.
@@ -239,26 +265,36 @@ This workflow helps avoid unrequested redesigns and reduces the risk of breaking
 - A skill alone does not create a graphical menu or guarantee that a custom slash command exists.
 - Design suggestions are guidance, not a guarantee of better usability; review and test changes with real users where possible.
 
-## Troubleshooting
+---
+
+<a id="troubleshooting"></a>
+
+## 🛠 Troubleshooting
 
 **The agent does not recognize the skill**
+
 - Confirm that the files are in the agent's documented skills directory.
 - Confirm the folder contains `SKILL.md` and all referenced Markdown files.
 - Check required metadata and reload the agent if necessary.
 
 **The `/ui-design` command does not work**
+
 - Confirm that the agent supports custom slash commands and that the command is registered.
 - Otherwise, use a normal prompt such as: `Use Frontend UI Pro to scan this project.`
 
 **A design URL cannot be imported**
+
 - Check that the URL is accessible to the agent.
 - Try a raw file URL if supported.
 - Paste the Markdown contents directly if retrieval still fails.
 
 **The agent suggests changes without understanding the project**
+
 - Ask it to inspect the relevant page, components, styles, and package configuration first.
 - Request that it separate verified findings from assumptions.
 - Ask for a plan before allowing edits.
+
+---
 
 ## Contributing
 
@@ -269,6 +305,8 @@ Contributions are welcome. When adding a UI type or design example:
 3. Describe responsive and accessibility considerations.
 4. Mention trade-offs or performance concerns.
 5. Avoid duplicate entries added only to increase the catalog size.
+
+---
 
 ## License
 
